@@ -10,8 +10,7 @@ body{
 header{
     background:#004aad;
     color:white;
-    text-align:center;
-    padding:20px;
+    padding:15px 20px;
 }
 
 header h1{
@@ -29,7 +28,6 @@ header h1{
     font-weight:bold;
     border-radius:5px;
     cursor:pointer;
-    margin:15px auto;
 }
 
 /* Navigation */
@@ -38,7 +36,7 @@ nav{
     justify-content:center;
     flex-wrap:wrap;
     gap:10px;
-    margin-top:20px;
+    margin-top:15px;
 }
 
 nav a{
@@ -47,7 +45,6 @@ nav a{
     font-weight:bold;
     padding:10px 18px;
     border-radius:5px;
-    transition:0.3s;
 }
 
 nav a:hover{
@@ -55,7 +52,7 @@ nav a:hover{
     color:#004aad;
 }
 
-/* Hero Section */
+/* Hero */
 .hero{
     text-align:center;
     padding:50px 20px;
@@ -67,10 +64,6 @@ nav a:hover{
     object-fit:cover;
     border-radius:50%;
     border:5px solid #004aad;
-}
-
-.hero h2{
-    margin-top:20px;
 }
 
 .hero p{
@@ -88,11 +81,6 @@ nav a:hover{
     text-decoration:none;
     padding:12px 25px;
     border-radius:6px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#00307a;
 }
 
 /* Footer */
@@ -104,10 +92,41 @@ footer{
     margin-top:50px;
 }
 
-/* Mobile Responsive */
+/* Mobile */
 @media (max-width:768px){
 
-    header{
+header{
+    text-align:left;
+}
+
+.menu-btn{
+    display:block;
+    margin-left:auto;
+    margin-bottom:10px;
+}
+
+nav{
+    display:none;
+    flex-direction:column;
+    width:100%;
+}
+
+nav.show{
+    display:flex;
+}
+
+nav a{
+    width:100%;
+    text-align:center;
+    padding:12px;
+}
+
+.hero img{
+    width:170px;
+    height:170px;
+}
+
+}    header{
         padding:15px;
     }
 
