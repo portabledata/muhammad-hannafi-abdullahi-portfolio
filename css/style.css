@@ -18,6 +18,20 @@ header h1{
     margin:0;
 }
 
+/* Menu Button */
+.menu-btn{
+    display:none;
+    background:white;
+    color:#004aad;
+    border:none;
+    padding:10px 15px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    margin:15px auto;
+}
+
 /* Navigation */
 nav{
     display:flex;
@@ -101,17 +115,71 @@ footer{
         font-size:24px;
     }
 
+    .menu-btn{
+        display:block;
+    }
+
     nav{
+        display:none;
         flex-direction:column;
         align-items:center;
+        width:100%;
+    }
+
+    nav.show{
+        display:flex;
     }
 
     nav a{
         width:90%;
         text-align:center;
         background:rgba(255,255,255,0.15);
-        margin:3px 0;
+        margin:5px 0;
         padding:12px;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero img{
+        width:170px;
+        height:170px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+    }
+    nav a{
+        width:90%;
+        text-align:center;
+        background:rgba(255,255,255,0.15);
+        margin:5px 0;
+        padding:12px;
+    }
+
+    .hero{
+        padding:30px 15px;
+    }
+
+    .hero img{
+        width:170px;
+        height:170px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+    }        padding:12px;
     }
 
     .hero{
