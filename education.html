@@ -13,7 +13,9 @@
 
 <h1>Education</h1>
 
-<nav>
+<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+<nav id="menu">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="education.html">Education</a>
@@ -44,6 +46,12 @@
 <footer>
 <p>© 2026 Muhammad Hannafi Abdullahi</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
