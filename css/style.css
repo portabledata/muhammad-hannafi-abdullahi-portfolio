@@ -116,7 +116,9 @@ footer{
     }
 
     .menu-btn{
-        display:block;
+    display:block;
+    float:right;
+    margin:10px;
     }
 
     nav{
