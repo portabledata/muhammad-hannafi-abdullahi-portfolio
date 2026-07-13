@@ -1,86 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multimedia - Muhammad Hannafi Abdullahi</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Hannafi Abdullahi</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Muhammad Hannafi Abdullahi</h1>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="multimedia.html">Multimedia</a></li>
-        </ul>
-    </nav>
+<h1>Muhammad Hannafi Abdullahi</h1>
+
+<button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+<nav id="menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="education.html">Education</a>
+<a href="skills.html">Skills</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="gallery.html">Gallery</a>
+<a href="resume.html">Resume</a>
+<a href="contact.html">Contact</a>
+<a href="faq.html">FAQ</a>
+<a href="multimedia.html">Multimedia</a>
+</nav>
+
 </header>
 
-<main>
+<section class="hero">
 
-    <h2>Multimedia</h2>
-    <p>This page contains video, audio, YouTube video, and iframe examples.</p>
+<img src="images/profile.jpg" alt="Profile">
 
-    <hr>
+<h2>Software Engineering Student</h2>
 
-    <h3>HTML Video</h3>
+<p>
+Welcome to my personal portfolio website.
+I am Muhammad Hannafi Abdullahi, a Level 200 Software Engineering student at Northwest University Kano.
+</p>
 
-    <video width="500" controls>
-        <source src="video/myvideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+<a class="btn" href="about.html">Learn More</a>
 
-    <hr>
-
-    <h3>HTML Audio</h3>
-
-    <audio controls>
-        <source src="audio/myaudio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <hr>
-
-    <h3>YouTube Video</h3>
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video"
-            allowfullscreen>
-    </iframe>
-
-    <hr>
-
-    <h3>Google Map (Iframe Example)</h3>
-
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18..."
-        width="600"
-        height="450"
-        style="border:0;"
-        loading="lazy"
-        allowfullscreen>
-    </iframe>
-
-</main>
+</section>
 
 <footer>
-    <p>&copy; 2026 Muhammad Hannafi Abdullahi. All Rights Reserved.</p>
+<p>&copy; 2026 Muhammad Hannafi Abdullahi</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
