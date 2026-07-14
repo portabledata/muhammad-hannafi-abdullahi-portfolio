@@ -1,17 +1,16 @@
-9<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Muhammad Hannafi Abdullahi</title>
+<title>Multimedia</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <header>
-
-<h1>Muhammad Hannafi Abdullahi</h1>  
+<h1>Multimedia</h1>
 
 <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
 
@@ -31,18 +30,26 @@
 
 </header>
 
-<section class="hero">
+<section class="container">
+<h2>My Multimedia Page</h2>
 
-<img src="images/profile.jpg" alt="Profile">
+<h3>Video</h3>
+<video width="320" controls>
+<source src="videos/myvideo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
-<h2>Software Engineering Student</h2>
+<h3>Audio</h3>
+<audio controls>
+<source src="audio/myaudio.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
-<p>
-Welcome to my personal portfolio website.
-I am Muhammad Hannafi Abdullahi, a Level 200 Software Engineering student at Northwest University Kano.
-</p>
-
-<a class="btn" href="about.html">Learn More</a>
+<h3>YouTube Video</h3>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
 
 </section>
 
@@ -52,9 +59,9 @@ I am Muhammad Hannafi Abdullahi, a Level 200 Software Engineering student at Nor
 
 <script>
 function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
+document.getElementById("menu").classList.toggle("show");
 }
 </script>
 
 </body>
-</html>
+    </html>
